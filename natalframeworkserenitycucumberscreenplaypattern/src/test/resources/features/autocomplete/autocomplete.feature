@@ -8,7 +8,7 @@ Característica: Autocomplete Simple
     Y al seleccionar alguna opcion
     Entonces deberia visualizar la opcion seleccionada
 
-
+@current
   Escenario: Seleccion Multiple
     Dado me encuentro en la website de autocomplete seleccion multiple
     Cuando ingreso el valor "1" en el input

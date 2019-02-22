@@ -1,14 +1,12 @@
 package com.natalframework.screenplay.tasks;
 
-import com.natalframework.screenplay.pages.CheckBoxBasico;
-import com.natalframework.screenplay.pages.CheckBoxMultiple;
-import com.natalframework.screenplay.pages.SeleccionMultiple;
-import com.natalframework.screenplay.pages.SeleccionSimple;
+import com.natalframework.screenplay.pages.*;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 
 public class NavigateTo implements Task {
 
@@ -42,6 +40,13 @@ public class NavigateTo implements Task {
         website = CheckBoxMultiple.class;
         return instrumented(NavigateTo.class);
     }
+
+    public static NavigateTo theDatePickerSimpleWebsite(){
+        website = DatePickerSimple.class;
+
+        return instrumented(NavigateTo.class);
+    }
+
 
 
 
