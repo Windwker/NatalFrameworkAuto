@@ -4,7 +4,7 @@ import com.natalframework.screenplay.questions.checkboxbasico.EstadoCheckBoxSimp
 import com.natalframework.screenplay.questions.checkboxmultiple.EstadoCheckBoxMultiple;
 import com.natalframework.screenplay.questions.checkboxmultiple.ListadoCheckBoxDisponibles;
 import com.natalframework.screenplay.questions.checkboxmultiple.ListadoCheckBoxSeleccionados;
-import com.natalframework.screenplay.tasks.NavigateTo;
+import com.natalframework.screenplay.tasks.NavegarHacia;
 import com.natalframework.screenplay.tasks.checkboxbasico.SeleccionarCheckboxSimple;
 import com.natalframework.screenplay.tasks.checkboxmultiple.SeleccionarCheckboxMultiple;
 import cucumber.api.java.Before;
@@ -29,7 +29,7 @@ public class CheckboxUserStepdefs {
 
     @Dado("^me encuentro en la website de checkbox basico$")
     public void meEncuentroEnLaWebsiteDeCheckboxBasico() {
-        theActorCalled("Javi").wasAbleTo(NavigateTo.theCheckBoxBasicoWebsite());
+        theActorCalled("Javi").wasAbleTo(NavegarHacia.laPaginadeCheckBoxBasico());
     }
 
     @Cuando("^hago click en el checkbox$")
@@ -54,7 +54,7 @@ public class CheckboxUserStepdefs {
 
     @Dado("^me encuentro en la website de checkbox multiple$")
     public void meEncuentroEnLaWebsiteDeCheckboxMultiple() {
-        theActorCalled("Javi").wasAbleTo(NavigateTo.theCheckBoxMultipleWebsite());
+        theActorCalled("Javi").wasAbleTo(NavegarHacia.laPaginadeCheckBoxMultiple());
     }
 
     @Cuando("^hago click en todos los checkbox$")

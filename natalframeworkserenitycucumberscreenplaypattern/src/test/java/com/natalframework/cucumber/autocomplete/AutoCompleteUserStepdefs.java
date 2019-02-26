@@ -9,9 +9,8 @@ import com.natalframework.screenplay.tasks.seleccionmultiple.EliminarOpcion;
 import com.natalframework.screenplay.tasks.seleccionmultiple.EstablecerCriterioBusquedaMultiple;
 import com.natalframework.screenplay.tasks.seleccionmultiple.SeleccionarCriterioBusquedaMultiple;
 import com.natalframework.screenplay.tasks.seleccionsimple.EstablecerCriterioBusquedaSimple;
-import com.natalframework.screenplay.tasks.NavigateTo;
+import com.natalframework.screenplay.tasks.NavegarHacia;
 import com.natalframework.screenplay.tasks.seleccionsimple.SeleccionarCriterioBusquedaSimple;
-import cucumber.api.PendingException;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dado;
@@ -34,12 +33,12 @@ public class AutoCompleteUserStepdefs {
 
     @Dado("^me encuentro en la website de autocomplete seleccion simple$")
     public void meEncuentroEnLaWebsiteDeAutocompleteSeleccionSimple() {
-        theActorCalled("Javi").wasAbleTo(NavigateTo.theSeleccionSimpleWebsite());
+        theActorCalled("Javi").wasAbleTo(NavegarHacia.laPaginadeSeleccionSimple());
 
     }
 
     @Cuando("^comienzo a ingresar \"([^\"]*)\" en el input$")
-    public void comienzoAIngresarEnElInput(String arg0) throws Throwable {
+    public void comienzoAIngresarEnElInput(String arg0) {
         theActorInTheSpotlight().attemptsTo(EstablecerCriterioBusquedaSimple.ConElValor(arg0));
 
     }
@@ -64,11 +63,11 @@ public class AutoCompleteUserStepdefs {
 
     @Dado("^me encuentro en la website de autocomplete seleccion multiple$")
     public void meEncuentroEnLaWebsiteDeAutocompleteSeleccionMultiple() {
-        theActorCalled("Javi").wasAbleTo(NavigateTo.theSeleccionMultipleWebsite());
+        theActorCalled("Javi").wasAbleTo(NavegarHacia.laPaginadeSeleccionMultiple());
     }
 
     @Cuando("^ingreso el valor \"([^\"]*)\" en el input$")
-    public void ingresoElValorEnElInput(String arg0) throws Throwable {
+    public void ingresoElValorEnElInput(String arg0){
         theActorInTheSpotlight().attemptsTo(EstablecerCriterioBusquedaMultiple.conElValor(arg0));
     }
 
@@ -89,7 +88,7 @@ public class AutoCompleteUserStepdefs {
     }
 
     @Y("^deberia poder ingresar el valor \"([^\"]*)\" en el input$")
-    public void deberiaPoderIngresarElValorEnElInput(String arg0) throws Throwable {
+    public void deberiaPoderIngresarElValorEnElInput(String arg0) {
 
         theActorInTheSpotlight().attemptsTo(EstablecerCriterioBusquedaMultiple.conElValor(arg0));
     }

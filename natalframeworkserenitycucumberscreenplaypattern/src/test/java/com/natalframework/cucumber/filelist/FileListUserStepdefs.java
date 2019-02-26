@@ -1,6 +1,6 @@
 package com.natalframework.cucumber.filelist;
 
-import com.natalframework.screenplay.tasks.NavigateTo;
+import com.natalframework.screenplay.tasks.NavegarHacia;
 import com.natalframework.screenplay.tasks.filelist.DescargarArchivo;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
@@ -20,7 +20,7 @@ public class FileListUserStepdefs {
 
     @Dado("^que me encuentro en el website del file-list$")
     public void queMeEncuentroEnElWebsiteDelFileList() {
-    theActorCalled("Javi").wasAbleTo(NavigateTo.theFileListWebsite());
+    theActorCalled("Javi").wasAbleTo(NavegarHacia.laPaginadeFileList());
     }
 
     @Cuando("^presiono descargar algun elemento del listado$")

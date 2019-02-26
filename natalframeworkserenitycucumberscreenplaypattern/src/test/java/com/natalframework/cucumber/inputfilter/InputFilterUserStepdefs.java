@@ -2,10 +2,9 @@ package com.natalframework.cucumber.inputfilter;
 
 import com.natalframework.screenplay.questions.inputfilter.ConsultaSQL;
 import com.natalframework.screenplay.questions.inputfilter.FiltroSeleccionadoInput;
-import com.natalframework.screenplay.tasks.NavigateTo;
+import com.natalframework.screenplay.tasks.NavegarHacia;
 import com.natalframework.screenplay.tasks.inputfilter.GenerarFiltro;
 import com.natalframework.screenplay.tasks.inputfilter.IngresarFiltro;
-import cucumber.api.PendingException;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dado;
@@ -27,7 +26,7 @@ public class InputFilterUserStepdefs {
     private String valor;
     @Dado("^que me encuentro en el website input-filter$")
     public void queMeEncuentroEnElWebsiteInputFilter() {
-    theActorCalled("Javi").wasAbleTo(NavigateTo.theInputFilterWebSite());
+    theActorCalled("Javi").wasAbleTo(NavegarHacia.laPaginadeInputFilter());
 
     }
 
