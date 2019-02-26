@@ -11,4 +11,6 @@ public class Listas {
     public static Target SELECTORES_ANO = Target.the("Listado de selectores Ano").located(By.xpath("/html/body/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div[1]/div/div[2]/div/div/div/span/div/div/ul/li[1]/div/div[3]/table/tbody/tr/td/span"));
     public static Target SELECTORES_MES = Target.the("Listado de selectores Mes").located(By.xpath("/html/body/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div[1]/div/div[2]/div/div/div/span/div/div/ul/li[1]/div/div[2]/table/tbody/tr/td/span"));
     public static Target SELECTORES_DIA = Target.the("Listado de selectores Dia").located(By.xpath("/html/body/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div[1]/div/div[2]/div/div/div/span/div/div/ul/li[1]/div/div[1]/table/tbody/tr//td[@class!=\"day old\"][@class!=\"day new\"][@class!=\"day new weekend\"]"));
+    public static Target ARCHIVOS_DESCARGA = Target.the("Listado de archivos para descargar").located(By.xpath("//i[@class=\"fa fa-download\"]"));
+    public static Target test = Target.the("test").locatedBy("name='dueDate'");
 }

@@ -6,22 +6,15 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 
 public class NavigateTo implements Task {
 
 
     private static Class website = null;
 
-    @Override
-    public <T extends Actor> void performAs(T theActor) {
-        theActor.attemptsTo(Open.browserOn().the(website));
-    }
-
-
-    public static NavigateTo theSeleccionSimpleWebsite(){
+    public static NavigateTo theSeleccionSimpleWebsite() {
         website = SeleccionSimple.class;
-        return  instrumented(NavigateTo.class);
+        return instrumented(NavigateTo.class);
 
     }
 
@@ -31,23 +24,40 @@ public class NavigateTo implements Task {
 
     }
 
-    public static NavigateTo theCheckBoxBasicoWebsite(){
+    public static NavigateTo theCheckBoxBasicoWebsite() {
         website = CheckBoxBasico.class;
         return instrumented(NavigateTo.class);
     }
 
-    public static NavigateTo theCheckBoxMultipleWebsite(){
+    public static NavigateTo theCheckBoxMultipleWebsite() {
         website = CheckBoxMultiple.class;
         return instrumented(NavigateTo.class);
     }
 
-    public static NavigateTo theDatePickerSimpleWebsite(){
+    public static NavigateTo theDatePickerSimpleWebsite() {
         website = DatePickerSimple.class;
 
         return instrumented(NavigateTo.class);
     }
 
+    public static NavigateTo theFileListWebsite() {
+        website = FileList.class;
 
+        return instrumented(NavigateTo.class);
+    }
+
+
+    public static NavigateTo theInputFilterWebSite() {
+        website = InputFilter.class;
+
+        return instrumented(NavigateTo.class);
+    }
+
+
+    @Override
+    public <T extends Actor> void performAs(T theActor) {
+        theActor.attemptsTo(Open.browserOn().the(website));
+    }
 
 
 }

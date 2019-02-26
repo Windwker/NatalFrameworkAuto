@@ -9,5 +9,4 @@ import org.openqa.selenium.WebDriver;
 public class DatePickerSimple extends PageObject {
 
 
-
 }
