@@ -1,6 +1,6 @@
 package com.natalframework.screenplay.tasks;
 
-import com.natalframework.screenplay.pages.*;
+import com.natalframework.screenplay.user_interface.pages.*;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
@@ -46,15 +46,26 @@ public class NavegarHacia implements Task {
         return instrumented(NavegarHacia.class);
     }
 
-
     public static NavegarHacia laPaginadeInputFilter() {
         website = InputFilter.class;
 
         return instrumented(NavegarHacia.class);
     }
 
-    public static NavegarHacia laPaginadeModal(){
+    public static NavegarHacia laPaginadeModal() {
         website = Modal.class;
+        return instrumented(NavegarHacia.class);
+    }
+
+    public static NavegarHacia laPaginadeNotificaciones() {
+        website = Notificacion.class;
+        return instrumented((NavegarHacia.class));
+
+    }
+
+
+    public static NavegarHacia laPaginadeRadioButton(){
+        website = RadioButton.class;
         return instrumented(NavegarHacia.class);
     }
 

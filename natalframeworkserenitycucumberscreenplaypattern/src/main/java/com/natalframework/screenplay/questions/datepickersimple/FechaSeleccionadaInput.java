@@ -1,16 +1,12 @@
 package com.natalframework.screenplay.questions.datepickersimple;
 
-import com.natalframework.screenplay.pages.DatePickerSimple;
-import com.natalframework.screenplay.user_interface.Listas;
+import com.natalframework.screenplay.user_interface.pages.DatePickerSimple;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Value;
-import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 
-import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
+import static com.natalframework.screenplay.user_interface.Input.FECHA_DE_VENCIMIENTO;
 
 public class FechaSeleccionadaInput implements Question<String> {
     @Steps
@@ -25,8 +21,8 @@ public class FechaSeleccionadaInput implements Question<String> {
 
 
 
-
-        return page.evaluateJavascript("return vm.stringDate").toString();
+            return Value.of(FECHA_DE_VENCIMIENTO).viewedBy(theActor).asString();
+        //return page.evaluateJavascript("return vm.stringDate").toString();
 
 
 

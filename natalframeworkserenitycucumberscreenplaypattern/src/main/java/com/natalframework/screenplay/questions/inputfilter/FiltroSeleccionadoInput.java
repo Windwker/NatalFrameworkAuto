@@ -1,12 +1,9 @@
 package com.natalframework.screenplay.questions.inputfilter;
 
-import com.natalframework.screenplay.pages.InputFilter;
+import com.natalframework.screenplay.user_interface.pages.InputFilter;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.thucydides.core.annotations.Steps;
-
-import java.util.Arrays;
-import java.util.List;
 
 
 public class FiltroSeleccionadoInput implements Question<String> {
