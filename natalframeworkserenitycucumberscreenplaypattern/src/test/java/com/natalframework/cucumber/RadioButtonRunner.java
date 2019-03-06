@@ -5,6 +5,6 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "src/test/resources/features/radiobutton/multipleradiobutton.feature", tags = "@current")
+@CucumberOptions(features = "src/test/resources/features/radiobutton/multipleradiobutton.feature")
 public class RadioButtonRunner {
 }

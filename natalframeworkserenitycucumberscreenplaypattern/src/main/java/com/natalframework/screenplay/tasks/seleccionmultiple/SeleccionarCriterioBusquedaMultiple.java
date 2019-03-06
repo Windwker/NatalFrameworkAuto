@@ -30,6 +30,7 @@ public class SeleccionarCriterioBusquedaMultiple implements Task {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }
 
 
             List<WebElementFacade> listado = Listas.RESULTADOS_BUSQUEDA_MULTIPLE.resolveAllFor(theActor);
@@ -44,5 +45,3 @@ public class SeleccionarCriterioBusquedaMultiple implements Task {
 
         }
     }
-}
-
