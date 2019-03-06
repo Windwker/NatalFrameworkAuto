@@ -28,7 +28,6 @@ public class RadioButtonUserStepdefs {
         javi = theActorCalled("Javi");
     }
 
-
     @Dado("^que me encuentro en el website de radiobutton$")
     public void queMeEncuentroEnElWebsiteDeRadiobutton() {
         javi.wasAbleTo(NavegarHacia.laPaginadeRadioButton());
@@ -40,7 +39,6 @@ public class RadioButtonUserStepdefs {
 
     }
 
-
     @Entonces("^se muestra la opcion seleccionada$")
     public void seMuestraLaOpcionSeleccionada() {
         javi.should(seeThat(OpciondeRadioButtonSeleccionada.es(), equalTo("Opción seleccionada: autobus")));
@@ -51,7 +49,6 @@ public class RadioButtonUserStepdefs {
         javi.attemptsTo(AgregarOpcion.conValor(arg0));
 
     }
-
 
     @Entonces("^\"([^\"]*)\" se visualiza ingresada en la lista de radiobutton$")
     public void seVisualizaIngresadaEnLaListaDeRadiobutton(String arg0) {

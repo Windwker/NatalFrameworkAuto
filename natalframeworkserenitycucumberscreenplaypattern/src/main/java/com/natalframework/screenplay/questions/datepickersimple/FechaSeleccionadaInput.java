@@ -9,10 +9,12 @@ import net.thucydides.core.annotations.Steps;
 import static com.natalframework.screenplay.user_interface.Input.FECHA_DE_VENCIMIENTO;
 
 public class FechaSeleccionadaInput implements Question<String> {
+
     @Steps
     private DatePickerSimple page;
 
     public static Question<String> es() {
+
         return new FechaSeleccionadaInput();
     }
 
@@ -20,11 +22,8 @@ public class FechaSeleccionadaInput implements Question<String> {
     public String answeredBy(Actor theActor) {
 
 
-
-            return Value.of(FECHA_DE_VENCIMIENTO).viewedBy(theActor).asString();
+        return Value.of(FECHA_DE_VENCIMIENTO).viewedBy(theActor).asString();
         //return page.evaluateJavascript("return vm.stringDate").toString();
-
-
 
 
     }

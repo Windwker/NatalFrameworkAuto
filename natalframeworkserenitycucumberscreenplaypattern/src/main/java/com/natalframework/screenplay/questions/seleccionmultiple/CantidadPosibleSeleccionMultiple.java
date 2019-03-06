@@ -18,6 +18,7 @@ public class CantidadPosibleSeleccionMultiple implements Question<String> {
         ArrayList<String> listado =  ValoresPosiblesSeleccionMultiple.deLaListaDeResultados().answeredBy(theActor);
         return Integer.toString(listado.size());
 
+
     }
 
 

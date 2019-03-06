@@ -12,19 +12,22 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 public class EstablecerCriterioBusquedaMultiple implements Task {
     private final String valor;
 
+
     public EstablecerCriterioBusquedaMultiple(String valor) {
         this.valor = valor;
     }
 
-    @Override
-    public <T extends Actor> void performAs(T theActor) {
-        theActor.attemptsTo(Click.on(Input.CAMPO_BUSQUEDA_MULTIPLE));
-
-
-        theActor.attemptsTo(Enter.theValue(valor).into(Input.CAMPO_BUSQUEDA_MULTIPLE));
+    public static EstablecerCriterioBusquedaMultiple conElValor(String valor) {
+        return instrumented(EstablecerCriterioBusquedaMultiple.class, valor);
     }
 
-    public static EstablecerCriterioBusquedaMultiple conElValor(String valor){
-        return instrumented(EstablecerCriterioBusquedaMultiple.class,valor);
+    @Override
+    public <T extends Actor> void performAs(T theActor) {
+
+
+        theActor.attemptsTo(Click.on(Input.CAMPO_BUSQUEDA_MULTIPLE));
+        theActor.attemptsTo(Enter.theValue(valor).into(Input.CAMPO_BUSQUEDA_MULTIPLE));
+
+
     }
 }

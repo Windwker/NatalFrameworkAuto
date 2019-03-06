@@ -64,8 +64,14 @@ public class NavegarHacia implements Task {
     }
 
 
-    public static NavegarHacia laPaginadeRadioButton(){
+    public static NavegarHacia laPaginadeRadioButton() {
         website = RadioButton.class;
+        return instrumented(NavegarHacia.class);
+    }
+
+
+    public static NavegarHacia laPaginadeSlider() {
+        website = SliderSimple.class;
         return instrumented(NavegarHacia.class);
     }
 
