@@ -4,8 +4,10 @@ import com.natalframework.screenplay.actions.ClickEn;
 import com.natalframework.screenplay.questions.tablas.ArchivoDescargado;
 import com.natalframework.screenplay.questions.tablas.BotonesDeColumna;
 import com.natalframework.screenplay.questions.tablas.OpcionesDeColumnas;
+import com.natalframework.screenplay.questions.tablas.ValoresEnLaTabla;
 import com.natalframework.screenplay.tasks.NavegarHacia;
 import com.natalframework.screenplay.tasks.tabla.DescargarArchivo;
+import com.natalframework.screenplay.tasks.tabla.IngresarCriterioBusqueda;
 import com.natalframework.screenplay.tasks.tabla.SeleccionarOpcionesVisualizacionColumnas;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
@@ -25,7 +27,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 public class TablasUserStepdefs {
 
     private Actor robertDeNiro;
-    private String loQueJaviRecuerda;
+    private String loQueRobertDeNiroRecuerda;
 
     @Before
     public void setTheStage() {
@@ -90,5 +92,17 @@ public class TablasUserStepdefs {
     @Entonces("^la tabla es descargada como excel correctamente$")
     public void laTablaEsDescargadaComoExcelCorrectamente() {
         robertDeNiro.should(seeThat(ArchivoDescargado.es(), equalTo(true)));
+    }
+
+    @Cuando("^escribo \"([^\"]*)\" en el campo de busqueda$")
+    public void escriboEnElCampoDeBusqueda(String arg0) {
+        robertDeNiro.remember(loQueRobertDeNiroRecuerda, arg0);
+        robertDeNiro.attemptsTo(IngresarCriterioBusqueda.conElValor(arg0));
+
+    }
+
+    @Entonces("^la tabla se visualiza con los registros que corresponden al parametro de busqueda$")
+    public void laTablaSeVisualizaConLosRegistrosQueCorrespondenAlParametroDeBusqueda() {
+        robertDeNiro.should(seeThat(ValoresEnLaTabla.mostrados(robertDeNiro.recall(loQueRobertDeNiroRecuerda)), equalTo(true)));
     }
 }
