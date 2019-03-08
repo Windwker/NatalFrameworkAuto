@@ -75,6 +75,11 @@ public class NavegarHacia implements Task {
         return instrumented(NavegarHacia.class);
     }
 
+    public static NavegarHacia laPaginadeTabla() {
+        website = Tabla.class;
+        return instrumented(NavegarHacia.class);
+    }
+
 
     @Override
     public <T extends Actor> void performAs(T theActor) {

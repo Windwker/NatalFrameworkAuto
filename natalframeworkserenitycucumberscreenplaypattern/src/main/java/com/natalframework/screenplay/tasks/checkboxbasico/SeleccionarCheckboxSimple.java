@@ -6,7 +6,6 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 
 public class SeleccionarCheckboxSimple implements Task {
     @Override

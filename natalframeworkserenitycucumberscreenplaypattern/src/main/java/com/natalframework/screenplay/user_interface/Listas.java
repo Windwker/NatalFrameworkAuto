@@ -13,5 +13,8 @@ public class Listas {
     public static Target SELECTORES_DIA = Target.the("Listado de selectores Dia").located(By.xpath("/html/body/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div[1]/div/div[2]/div/div/div/span/div/div/ul/li[1]/div/div[1]/table/tbody/tr//td[@class!=\"day old\"][@class!=\"day new\"][@class!=\"day new weekend\"]"));
     public static Target ARCHIVOS_DESCARGA = Target.the("Listado de archivos para descargar").located(By.xpath("//i[@class=\"fa fa-download\"]"));
     public static Target BOTONES_NOTIFICACION = Target.the("Listado de botones para notificaciones").located(By.xpath("//*[@class=\"btn btn-primary\"]"));
+    public static Target OPCIONES_DE_COLUMNA = Target.the("Listado de opciones de columna").located(By.xpath("//*[contains(@class,\"dt-button buttons-columnVisibility\")]"));
+    public static Target BOTONES_DE_COLUMNA = Target.the("Listado de opciones de columna").located(By.xpath("//*[contains(@class,\"dt-button buttons-colvis\")]"));
+    public static Target COLUMNAS_DE_TABLA = Target.the("Lista de columnas de tabla").located(By.xpath("//*[@id=\"DataTables_Table_1\"]/thead/tr/th[@class!=\"select-col text-center sorting_disabled\"]"));
 
 }

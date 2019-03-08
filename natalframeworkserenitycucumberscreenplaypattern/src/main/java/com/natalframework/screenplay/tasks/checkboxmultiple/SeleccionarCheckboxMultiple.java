@@ -1,6 +1,5 @@
 package com.natalframework.screenplay.tasks.checkboxmultiple;
 
-import com.natalframework.screenplay.user_interface.pages.DatePickerSimple;
 import com.natalframework.screenplay.user_interface.CheckBox;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
