@@ -19,7 +19,17 @@ public class OpcionesDisponibleRadioButton implements Question<List<String>>{
         List<String>listadoTextoRadioButton = new ArrayList<>();
         for (WebElementFacade radioButton:listadoRadioButton
         ) {
-            listadoTextoRadioButton.add(radioButton.getText());
+            //Implementacion para eliminar los espacios adicionales en edge
+            String text = radioButton.getText();
+            char espacio = text.charAt(text.length() - 1);
+
+            if (espacio == ' ') {
+
+                text = text.substring(0, text.length() - 1);
+            }
+
+
+            listadoTextoRadioButton.add(text);
         }
 
         return listadoTextoRadioButton;

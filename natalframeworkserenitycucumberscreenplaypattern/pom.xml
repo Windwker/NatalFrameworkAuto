@@ -12,7 +12,9 @@
         <serenity.version>2.0.40</serenity.version>
         <serenity.cucumber.version>1.9.31</serenity.cucumber.version>
         <serenity.maven.version>2.0.40</serenity.maven.version>
-        <webdriver.driver>chrome</webdriver.driver>
+
+        <encoding>UTF-8</encoding>
+
     </properties>
 
     <repositories>
@@ -94,9 +96,6 @@
                         <include>**/*.java</include>
                     </includes>
                     <argLine>-Xmx512m</argLine>
-                    <systemPropertyVariables>
-                        <webdriver.driver>${webdriver.driver}</webdriver.driver>
-                    </systemPropertyVariables>
                 </configuration>
                 <executions>
                     <execution>

@@ -1,8 +1,8 @@
 #language:es
-
+@fail
   Característica: Input Filter
 
-  @current
+
     Escenario: Input Filter
       Dado que me encuentro en el website input-filter
       Cuando ingreso el valor "HOLAMUNDO" en el filtro nombre

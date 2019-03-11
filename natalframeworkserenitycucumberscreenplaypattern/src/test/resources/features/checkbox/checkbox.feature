@@ -1,4 +1,5 @@
 #language: es
+
 Característica: CheckBox
 
 

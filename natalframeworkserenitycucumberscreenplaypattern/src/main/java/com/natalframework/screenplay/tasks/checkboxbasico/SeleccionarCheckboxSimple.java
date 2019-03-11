@@ -8,14 +8,15 @@ import net.serenitybdd.screenplay.actions.Click;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class SeleccionarCheckboxSimple implements Task {
-    @Override
-    public <T extends Actor> void performAs(T theActor) {
-        theActor.attemptsTo(Click.on(CheckBox.CHECKBOX_BASICO));
-
-    }
-
-
     public static SeleccionarCheckboxSimple ahora() {
         return instrumented(SeleccionarCheckboxSimple.class);
+    }
+
+    @Override
+    public <T extends Actor> void performAs(T theActor) {
+
+
+        theActor.attemptsTo(Click.on(CheckBox.CHECKBOX_BASICO));
+
     }
 }

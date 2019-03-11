@@ -12,7 +12,7 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 
 public class MoverElSlider implements Interaction {
-    private static final double OFFSET = 6.64;
+
     private final String value;
 
     public MoverElSlider(String value) {
