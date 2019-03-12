@@ -10,5 +10,11 @@ public class Input {
     public static Target FILTRO = Target.the("Campo Filtro").located(By.className("form-control"));
     public static Target OPCION_RADIO_BUTTON = Target.the("Input para agregar radio button").located(By.xpath("//*[@id=\"newVehicle\"]"));
     public static Target CRITERIO_BUSQUEDA = Target.the("Input de Criterio de Busqueda para la tabla").located(By.xpath("//*[@id=\"DataTables_Table_0_filter\"]/label/input"));
+    public static Target NOMBRE = Target.the("Campo nombre").located(By.id("nombre"));
+    public static Target APELLIDO = Target.the("Campo nombre").located(By.id("apellido"));
+    public static Target EMAIL = Target.the("Campo email").located(By.id("email"));
+    public static Target FECHA_DE_NACIMIENTO = Target.the("Picker de fecha de nacimiento").located(By.id("date"));
 
 }
+
+

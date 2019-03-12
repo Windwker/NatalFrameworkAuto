@@ -20,4 +20,13 @@ public class ClickEn {
     }
 
 
+    public static Interaction elBotonSiguiente() {
+        return Click.on(Boton.SIGUIENTE);
+    }
+
+    public static Interaction elBotonFinalizar() {
+        return Click.on(Boton.FINALIZAR);
+    }
+
+
 }

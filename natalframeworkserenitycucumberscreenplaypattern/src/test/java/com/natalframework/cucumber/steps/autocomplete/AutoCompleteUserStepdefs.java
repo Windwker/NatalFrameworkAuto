@@ -5,11 +5,11 @@ import com.natalframework.screenplay.questions.seleccionmultiple.ValorCriterioBu
 import com.natalframework.screenplay.questions.seleccionmultiple.ValoresPosiblesSeleccionMultiple;
 import com.natalframework.screenplay.questions.seleccionsimple.ValorCriterioBusquedaSimpleSeleccionado;
 import com.natalframework.screenplay.questions.seleccionsimple.ValoresPosiblesSeleccionSimple;
+import com.natalframework.screenplay.tasks.NavegarHacia;
 import com.natalframework.screenplay.tasks.seleccionmultiple.EliminarOpcion;
 import com.natalframework.screenplay.tasks.seleccionmultiple.EstablecerCriterioBusquedaMultiple;
 import com.natalframework.screenplay.tasks.seleccionmultiple.SeleccionarCriterioBusquedaMultiple;
 import com.natalframework.screenplay.tasks.seleccionsimple.EstablecerCriterioBusquedaSimple;
-import com.natalframework.screenplay.tasks.NavegarHacia;
 import com.natalframework.screenplay.tasks.seleccionsimple.SeleccionarCriterioBusquedaSimple;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
@@ -116,4 +116,6 @@ public class AutoCompleteUserStepdefs {
     public void laOpcionSeEliminaDelSelector() {
         theActorInTheSpotlight().should(seeThat(ValorCriterioBusquedaMultipleSeleccionado.es(), not(hasItem("×78 - DEL CENTRO 14"))));
     }
+
+
 }

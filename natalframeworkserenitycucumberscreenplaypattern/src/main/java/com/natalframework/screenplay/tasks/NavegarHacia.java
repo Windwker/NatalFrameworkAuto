@@ -81,6 +81,12 @@ public class NavegarHacia implements Task {
     }
 
 
+    public static NavegarHacia laPaginadelWizard() {
+        website = Wizard.class;
+        return instrumented(NavegarHacia.class);
+    }
+
+
     @Override
     public <T extends Actor> void performAs(T theActor) {
         theActor.attemptsTo(Open.browserOn().the(website));

@@ -1,4 +1,4 @@
-package com.natalframework.screenplay.user_interface;
+package com.natalframework.screenplay.user_interface.datepicker;
 
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
