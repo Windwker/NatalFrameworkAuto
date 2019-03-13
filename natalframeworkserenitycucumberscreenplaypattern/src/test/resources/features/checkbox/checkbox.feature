@@ -10,7 +10,6 @@ Característica: CheckBox
     Y hago click en el checkbox
     Entonces el checkbox se selecciona
 
-  @current
   Escenario: Checkbox Multiple
     Dado me encuentro en la website de checkbox multiple
     Cuando hago click en todos los checkbox

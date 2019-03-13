@@ -1,7 +1,7 @@
 #language: es
 Característica: File List
 
-  @current
+
   Escenario: File List Descargar
     Dado que me encuentro en el website del file-list
     Cuando presiono descargar algun elemento del listado

@@ -1,6 +1,6 @@
 #language: es
   Característica: DatePicker
-    @current
+
     Escenario: Date Picker Simple
       Dado que me encuentro en el website del datepicker simple
       Cuando selecciono "11/12/2492" como fecha del picker

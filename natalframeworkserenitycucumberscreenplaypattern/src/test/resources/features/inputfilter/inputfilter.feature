@@ -1,6 +1,6 @@
 #language:es
-@fail
-  Característica: Input Filter
+
+Característica: Input Filter
 
 
     Escenario: Input Filter

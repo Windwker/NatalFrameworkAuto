@@ -8,7 +8,6 @@ Característica: RadioButton
     Entonces se muestra la opcion seleccionada
 
 
-  @current
   Escenario: RadioButton Anadir
     Dado que me encuentro en el website de radiobutton
     Cuando agrego "Nueva opcion" en el campo de ingreso y presiono anadir

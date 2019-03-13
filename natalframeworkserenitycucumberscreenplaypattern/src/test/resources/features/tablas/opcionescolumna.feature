@@ -1,6 +1,6 @@
 #language: es
 
-Característica: Tabla
+Característica: Opciones de columna
 
   Escenario: Verificar los elementos desplegados en el selector de columnas
     Dado que me encuentro en el website de tablas
