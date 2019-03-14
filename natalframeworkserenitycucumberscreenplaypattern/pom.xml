@@ -14,7 +14,7 @@
         <mavensurefire.plugin.version>3.0.0-M3</mavensurefire.plugin.version>
         <mavenfailsafe.plugin.version>3.0.0-M3</mavenfailsafe.plugin.version>
         <serenity.cucumber.version>1.9.31</serenity.cucumber.version>
-        <serenity.maven.version>2.0.41</serenity.maven.version>
+        <serenity.maven.version>2.0.40</serenity.maven.version>
         <maven.compiler.version>3.7.0</maven.compiler.version>
         <parallel.tests>4</parallel.tests>
         <encoding>UTF-8</encoding>
@@ -67,11 +67,6 @@
             <version>${serenity.maven.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.8.0-beta4</version>
-        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

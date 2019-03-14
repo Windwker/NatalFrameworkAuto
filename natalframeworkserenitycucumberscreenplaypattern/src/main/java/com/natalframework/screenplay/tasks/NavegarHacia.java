@@ -86,11 +86,14 @@ public class NavegarHacia implements Task {
         return instrumented(NavegarHacia.class);
     }
 
-
-    @Override
-    public <T extends Actor> void performAs(T theActor) {
-        theActor.attemptsTo(Open.browserOn().the(website));
+    public static NavegarHacia laPaginadelTreeview() {
+        website = Treeview.class;
+        return instrumented(NavegarHacia.class);
     }
 
 
+
+    public <T extends Actor> void performAs(T theActor) {
+        theActor.attemptsTo(Open.browserOn().the(website));
+    }
 }

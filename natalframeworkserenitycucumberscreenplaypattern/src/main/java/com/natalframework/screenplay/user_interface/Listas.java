@@ -16,5 +16,7 @@ public class Listas {
     public static Target OPCIONES_DE_COLUMNA = Target.the("Listado de opciones de columna").located(By.xpath("//*[contains(@class,\"dt-button buttons-columnVisibility\")]"));
     public static Target BOTONES_DE_COLUMNA = Target.the("Listado de opciones de columna").located(By.xpath("//*[contains(@class,\"dt-button buttons-colvis\")]"));
     public static Target COLUMNAS_DE_TABLA = Target.the("Lista de columnas de tabla").located(By.xpath("//*[@id=\"DataTables_Table_1\"]/thead/tr/th[@class!=\"select-col text-center sorting_disabled\"]"));
-
+    public static Target ELEMENTOS_TREE_VIEW = Target.the("Lista de elementos del treeview").located(By.xpath("/html/body/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div[1]/div/div[2]/div/div/div/div[2]/div/ul/li"));
+    public static Target CHECKBOX_TREE_VIEW = Target.the("Lista de checkbox del treeview").located(By.xpath("/html/body/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div/ul/li/span[@class=\"treeview-item__check\"or@class=\"treeview-item__opener\"]"));
+    public static Target test = Target.the("test").located(By.xpath("/html/body/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div[1]/div/div[2]/div/div/div/div[2]/div/ul"));
 }
