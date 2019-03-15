@@ -11,7 +11,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity.version>2.0.40</serenity.version>
-        <mavensurefire.plugin.version>3.0.0-M3</mavensurefire.plugin.version>
+        <mavensurefire.plugin.version>2.22.1</mavensurefire.plugin.version>
         <mavenfailsafe.plugin.version>3.0.0-M3</mavenfailsafe.plugin.version>
         <serenity.cucumber.version>1.9.30</serenity.cucumber.version>
         <serenity.maven.version>2.0.40</serenity.maven.version>
