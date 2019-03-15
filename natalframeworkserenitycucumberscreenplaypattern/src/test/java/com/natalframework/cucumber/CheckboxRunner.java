@@ -5,6 +5,6 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "src/test/resources/features/checkbox/checkbox.feature", tags = "@current")
+@CucumberOptions(features = "src/test/resources/features/checkbox/checkbox.feature")
 public class CheckboxRunner {
 }
