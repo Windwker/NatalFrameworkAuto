@@ -13,9 +13,13 @@
         <serenity.version>2.0.40</serenity.version>
         <mavensurefire.plugin.version>3.0.0-M3</mavensurefire.plugin.version>
         <mavenfailsafe.plugin.version>3.0.0-M3</mavenfailsafe.plugin.version>
-        <serenity.cucumber.version>1.9.31</serenity.cucumber.version>
-        <serenity.maven.version>2.0.41</serenity.maven.version>
+        <serenity.cucumber.version>1.9.30</serenity.cucumber.version>
+        <serenity.maven.version>2.0.40</serenity.maven.version>
         <maven.compiler.version>3.7.0</maven.compiler.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+
         <parallel.tests>4</parallel.tests>
         <encoding>UTF-8</encoding>
     </properties>
@@ -68,11 +72,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.8.0-beta4</version>
-        </dependency>
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13-beta-2</version>
@@ -85,7 +84,7 @@
             <version>${mavensurefire.plugin.version}</version>
             <type>maven-plugin</type>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
+
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
@@ -93,7 +92,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -146,8 +144,8 @@
                         <artifactId>maven-compiler-plugin</artifactId>
                         <version>${maven.compiler.version}</version>
                         <configuration>
-                            <source>1.8</source>
-                            <target>1.8</target>
+                            <source>${maven.compiler.source}</source>
+                            <target>${maven.compiler.target}</target>
                         </configuration>
                     </plugin>
                     <plugin>
