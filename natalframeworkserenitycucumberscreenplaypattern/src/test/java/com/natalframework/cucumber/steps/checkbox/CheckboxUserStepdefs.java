@@ -1,5 +1,6 @@
 package com.natalframework.cucumber.steps.checkbox;
 
+import com.natalframework.screenplay.actions.CambiarTab;
 import com.natalframework.screenplay.questions.checkboxbasico.EstadoCheckBoxSimple;
 import com.natalframework.screenplay.questions.checkboxmultiple.EstadoCheckBoxMultiple;
 import com.natalframework.screenplay.questions.checkboxmultiple.ListadoCheckBoxDisponibles;
@@ -35,6 +36,7 @@ public class CheckboxUserStepdefs {
     @Cuando("^hago click en el checkbox$")
     public void hagoClickEnElCheckbox() {
 
+
         theActorInTheSpotlight().attemptsTo(SeleccionarCheckboxSimple.ahora());
 
     }
@@ -49,7 +51,7 @@ public class CheckboxUserStepdefs {
     @Entonces("^el checkbox se selecciona$")
     public void elCheckboxSeSelecciona() {
         theActorInTheSpotlight().should(seeThat(EstadoCheckBoxSimple.es(), equalTo("Checkeado")));
-
+        theActorInTheSpotlight().attemptsTo(CambiarTab.aLaPestana());
     }
 
     @Dado("^me encuentro en la website de checkbox multiple$")

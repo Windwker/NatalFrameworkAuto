@@ -2,7 +2,7 @@
 
 Característica: CheckBox
 
-
+@current
   Escenario: CheckBox Basico
     Dado me encuentro en la website de checkbox basico
     Cuando hago click en el checkbox
